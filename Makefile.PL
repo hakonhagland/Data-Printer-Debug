@@ -34,7 +34,6 @@ if ($^O =~ /Win32/i) {
 
 if ($ENV{DDPTESTCOVERAGE}) {
     foreach my $p (qw(
-        Digest::MD5 Digest::SHA Digest::MD2 Digest::MD4
         JSON::PP JSON::XS JSON JSON::Any JSON::MaybeXS JSON::DWIW JSON::Parser
         JSON::SL Pegex::JSON Cpanel::JSON::XS JSON::Tiny JSON::Typist Dancer
         Dancer2 HTTP::Message
