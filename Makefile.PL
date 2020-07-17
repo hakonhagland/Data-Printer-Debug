@@ -34,7 +34,6 @@ if ($^O =~ /Win32/i) {
 
 if ($ENV{DDPTESTCOVERAGE}) {
     foreach my $p (qw(
-        DBI DBD::SQLite DBIx::Class
         Time::Piece DateTime::TimeZone DateTime::Incomplete DateTime::Tiny
         Date::Tiny Date::Calc Date::Pcalc Date::Handler
         Date::Handler::Delta Date::Simple Date::Manip Panda::Date

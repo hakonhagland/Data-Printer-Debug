@@ -25,7 +25,7 @@ sub test_json_pp {
             multiline => 0,
             filters   => ['Web'],
         );
-
+        diag $json;
         my $data = JSON::PP::decode_json($json);
         is( $ddp->parse($data), $expected, 'JSON::PP booleans parsed' );
     };
