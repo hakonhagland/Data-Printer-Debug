@@ -26,6 +26,9 @@ sub test_json_pp {
             filters   => ['Web'],
         );
         diag "::: ", $JSON::PP::VERSION;
+        my $fn = $INC{'JSON/PP.pm'};
+        diag "::: ", $fn;
+        system 'cat ' . $fn . ' | head -30 1>&2';
         my $data = JSON::PP::decode_json($json);
         is( $ddp->parse($data), $expected, 'JSON::PP booleans parsed' );
     };
