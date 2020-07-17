@@ -34,15 +34,13 @@ if ($^O =~ /Win32/i) {
 
 if ($ENV{DDPTESTCOVERAGE}) {
     foreach my $p (qw(
-        DBI DBD::SQLite DBIx::Class
         Time::Piece DateTime::TimeZone DateTime::Incomplete DateTime::Tiny
         Date::Tiny Date::Calc Date::Pcalc Date::Handler
         Date::Handler::Delta Date::Simple Date::Manip Panda::Date
         DateTime DateTime::Duration Mojolicious Class::Date Class::Date::Rel
         Digest::MD5 Digest::SHA Digest::MD2 Digest::MD4
         JSON::PP JSON::XS JSON JSON::Any JSON::MaybeXS JSON::DWIW JSON::Parser
-        JSON::SL Pegex::JSON Cpanel::JSON::XS JSON::Tiny JSON::Typist Dancer
-        Dancer2 HTTP::Message
+        JSON::SL Pegex::JSON Cpanel::JSON::XS JSON::Tiny JSON::Typist
     )) {
         $options{PREREQ_PM}{$p} = 0;
     }
