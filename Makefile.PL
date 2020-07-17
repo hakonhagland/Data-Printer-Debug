@@ -34,8 +34,6 @@ if ($^O =~ /Win32/i) {
 
 if ($ENV{DDPTESTCOVERAGE}) {
     foreach my $p (qw(
-        Date::Tiny Date::Calc Date::Handler
-        Date::Handler::Delta Date::Simple Date::Manip Panda::Date
         DateTime DateTime::Duration Mojolicious Class::Date Class::Date::Rel
         Digest::MD5 Digest::SHA Digest::MD2 Digest::MD4
         JSON::PP JSON::XS JSON JSON::Any JSON::MaybeXS JSON::DWIW JSON::Parser
