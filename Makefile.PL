@@ -35,8 +35,7 @@ if ($^O =~ /Win32/i) {
 if ($ENV{DDPTESTCOVERAGE}) {
     foreach my $p (qw(
         JSON::PP JSON::XS JSON JSON::Any JSON::MaybeXS JSON::DWIW JSON::Parser
-        JSON::SL Pegex::JSON Cpanel::JSON::XS JSON::Tiny JSON::Typist Dancer
-        Dancer2 HTTP::Message
+        JSON::SL Pegex::JSON Cpanel::JSON::XS JSON::Tiny JSON::Typist
     )) {
         $options{PREREQ_PM}{$p} = 0;
     }
